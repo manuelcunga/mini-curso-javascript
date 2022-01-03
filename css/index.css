@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local(Poppins), url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local(Poppins), url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+body{
+  font-family: "Poppins-Regular";
+  background: #2d1497;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+div.produtos{
+  /* position: relative;
+  margin: 4% auto; */
+  width: 530px;
+  height: 580px;
+  border: 1.5px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  /* box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.16); */
+
+}
+
+div.produtos div.header{
+  position: relative;
+  padding: 28px;
+  width: 100%;
+  color: #000;
+  line-height: 28px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.produtos div.header div.content-user h2{
+  font-size: 17px;
+  font-family: "Poppins-Bold";
+  font-size: 1.3rem;
+}
+
+div.produtos div.header div.content-user img{
+  height: 44px;
+}
+/* div.produtos div.header div.user img{
+  height: 190px;
+  border: 2px solid #2d1497;
+} */
+div.produtos div.header div.content-user p{
+  font-size: 14px;
+}
+
+div.produtos div.header div.user img{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ border: 3.1px solid #2d1497;
+}
+
+div.produtos div.header button.remove{
+ font-weight: bolder;
+ cursor: pointer;
+ padding: 4px 15px;
+ border: none;
+ margin-top: 10px;
+ border-radius: 30px;
+ display: inline;
+}
+
+div.todo-body{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 25px;
+}
+
+.todo-body::-webkit-scrollbar{
+  background: none;
+  width: 5px;
+}
+.todo-body::-webkit-scrollbar-button{
+  background: #2c14977e;
+  border-radius: 60px;
+  height: 10px;
+}
+.todo-body::-webkit-scrollbar-thumb{
+  background: #2a07c7fd;
+  border-radius: 50px;
+}
+
+
+
+ul.todo-list{
+  list-style: none;
+  height: 100%;
+  font-size: 15px; 
+}
+
+ul.todo-list li.todo-item{
+ padding: 15px;
+ border-bottom: 1px solid #e7e7e7;
+ color: #000000;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+li.todo-item.checked{
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]{
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+}
+
+input.todoInput{
+  /* position: absolute;
+  bottom: 0;
+  left: 0; 
+   */
+  padding: 17px;
+  width: 80%;
+  border: 2px solid #d6d6d6;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input.todoInput:hover{
+  border: 2px solid #2d1497;
+
+}
+
+button.btn-sender{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+a.icon-deleted img{
+  width: 20px;
+}
+
+.todo-area-sub{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.404);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  margin: auto;
+  transition: all .4s;
+  display: none;
+
+}
+#close-This{
+  position: absolute;
+  top: 10px;
+  left: 380px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+#close-This:hover{
+  background: brown;
+  color: aliceblue;
+}
+.todo-area-sub .todo-area{
+  background: rgb(255, 255, 255);
+  width: 30%;
+  height: 30vh;
+  border-radius: 5px;
+
+  margin: auto;
+
+ 
+}
+
+div.produtos div.todo-area{
+  position: relative;
+  top: 23%;
+  /* left: 2;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-sender{
+  border: none;
+}
+.btn-sender img{
+  border: none;
+  padding: 10px;
+}
+
+.modal-click button{
+  background: #2d1497;
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+  border: none;
+  position: absolute;
+  left: 888px;
+  top: 530px;
+  color: white;
+  font-size: 30px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+div.produtos div.barra-data{
+  width: 90%;
+  height: 50px;
+  background: #2d1497;
+  margin: 0 auto;
+  border-radius: 5px;
+
+
+}
+
+div.produtos div.barra-data div.info-data h2{ 
+ font-size: 15px;
+
+}
+
+div.produtos div.barra-data div.info-data{
+  padding: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
